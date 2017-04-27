@@ -1,0 +1,30 @@
+<div class = "schedule-container">
+    <div class="schedule-header">
+        <h1 class="month-header">June 2015</h1>
+    </div>
+    <ul class="days">
+        <li>Mo</li><li>Tu</li><li>We</li><li>Th</li><li>Fr</li><li>Sa</li><li>Su</li>
+    </ul>
+    <% for(var id = 0; id < employees.length; id++){%>
+    <div class="schedule" id="scheduleeid<%=employees[id].id%>">
+        <ul class="weekdays">
+            <% for(var day = 1; day < 31; day++) { %>
+                <% for(var shift = 0; shift < schedule[id].length; shift++){%>
+                    <% if(schedule[id][shift] === day){%>
+                        <li class="working" id="day<%=day%>"><%=day%></li>
+                        <%break%>
+                    <!--if last element is reached with no match, we know there's no work this day-->
+                    <%} else if(shift === schedule[id].length -1 ){%> 
+                        <li id="day<%=day%>"><%=day%></li>
+                    <%}%>
+                <%}%>
+            <%}%>
+        </ul>
+        <label class="schedule-identifier"><%=employees[id].name%>'s schedule</label>
+    </div>
+    <%}%>
+    <div class="legend">
+        <span id="legend-working"></span>
+        <p id="key-working"> = working</p>
+    </div>
+</div>

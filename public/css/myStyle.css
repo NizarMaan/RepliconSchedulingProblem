@@ -1,0 +1,218 @@
+@font-face{
+    font-family: Montserrat-Light;
+    src: url("/fonts/Montserrat/Montserrat-Light.ttf");
+}
+
+@font-face{
+    font-family: Montserrat-Bold;
+    src: url("/fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+html, body{
+  height: 100%;
+}
+
+ul{list-style: none;}
+
+header{
+    background-color: rgba(0, 122, 201, 0.35);
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.5);*/
+    height: 50px;
+    position: absolute;
+    width: 100%;
+}
+
+footer{
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+#welcome-message-container{
+    position: relative;
+    top: 30%;
+    width: 1000px;
+}
+
+.welcome-message{
+    font-family: Montserrat-Light;
+    font-size: 64px;
+    display: none;
+    margin-left: 50px;
+}
+
+.welcome-message-sub{
+    font-family: Montserrat-Light;
+    font-size: 24px;
+    display: none;
+    margin-left: 50px;
+}
+
+.header-links{
+    margin-top: 12.5px;
+    margin-left: -20px;
+    display: inline;
+}
+
+.header-list-item{
+    display: inline;
+    margin-left: 20px;
+}
+
+.header-list-link{
+    color: white;
+    font-weight: bold;
+    margin-left: 3px;
+    font-family: Montserrat-Bold;
+}
+.header-list-link:hover{
+    text-decoration: none;
+    color: mediumseagreen;
+}
+
+.employee-list{
+    position: relative;
+    margin-left: 50px;
+    top: 100px;
+}
+.employee-container{
+    border-left: 3px solid dodgerblue;
+    border-top: 5px solid white;
+    background-color: whitesmoke;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.employee-container:hover{
+   background-color: rgba(60, 179, 113, 0.35);
+   cursor: pointer;
+}
+
+.employee-name-container{
+    width: 180px;
+    height: 60px;
+}
+.employee-name{
+    margin-left: 5px;
+    font-family: Montserrat-Light;
+    font-weight: bold;
+}
+
+#footer-list1{
+    margin-top: 20px;
+}
+.footer-links{
+    color: white;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.footer-header{
+    color: white;
+    opacity: 1;
+}
+
+.footer-links:hover{
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+}
+
+#replicon-logo{
+    height: 55px;
+    width: 105px;
+    margin-left: 20px;
+}
+
+#employee-arrow{
+    font-size: 10.5px;
+    float: right;
+    margin-top: 4.5px;
+}
+
+.schedule-container{
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -250px;
+    display: none;
+}
+
+.schedule{
+    display: none;
+}
+
+.schedule-header{
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+}
+
+.days{
+    font-family: Verdana;
+    margin-top: -10px;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.days li{
+    display: inline-block;
+    width: 14%;
+    color: gray;
+    text-align: center;
+}
+
+.weekdays{
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+    background: whitesmoke;
+    margin-top: -10px;
+}
+
+.weekdays li{
+    display: inline-block;
+    width: 13.5%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size:13px;
+    color:slategray;
+}
+
+.working{
+    background: dodgerblue;
+    color: ghostwhite !important;
+}
+
+.schedule-identifier{
+    font-size: 12px;
+    float: left;
+    padding-top: 25px;
+    margin-top: -90px;
+    color: white;
+}
+
+.legend{
+    position: absolute;
+    margin-top: 300px;
+}
+
+#legend-working{
+    height: 15px;
+    width: 75px;
+    background-color: dodgerblue;
+    display: inline-block;
+}
+
+#key-working{
+    display: inline-block;
+}

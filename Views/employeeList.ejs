@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <% include ../partials/header %>
+    <body>
+        <div class = "wrapper">
+            <table class="employee-list">
+                <th style="font-size: 18px;"><i class="glyphicon glyphicon-calendar"></i> Employees </th>
+                <% for(var i = 0; i < employees.length; i++) { %>
+                <tr class="employee-container" id="eid<%= employees[i].id%>">
+                    <td class="employee-name-container">
+                        <span class="employee-name"><%= employees[i].name %></span>
+                        <i class="glyphicon glyphicon-menu-right" id="employee-arrow"></i>
+                    </td>
+                </tr>
+                <% } %>
+            </table>
+                <% include ../partials/employeeSchedule %>
+        </div>
+    </body>
+    <% include ../partials/footer %>
+</html>

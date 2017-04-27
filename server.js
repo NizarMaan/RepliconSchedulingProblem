@@ -10,7 +10,7 @@ var request = require('request');
 var app = express(); //reference to our app routes etc.
 
 //set our host
-var server= app.listen(8000, listening);
+var server= app.listen(8080, listening);
 
 //hosting static files, the ability to host html files, images, css, js etc.
 app.use(express.static(__dirname + '/public')); 
